@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    color: #001858;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: #fef6e4;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+header img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #f582ae;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+#header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h1-name{
+    font-size: 4em;
+}
+
+#header-line{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.blue-line{
+    background-color: #001858;
+    border: 1px solid #001858;
+    border-radius: 5px;
+    width: 100px;
+    height: 5px;
+    margin-top: 40px;
+}
+
+#star{
+    font-size: 5em;
+    padding: 0 2% 0 2%;
+    color: #f582ae;
+}
+
+h3{
+    font-size: 2em;
+}
+/*-----main-----*/
+/*-----education-----*/
+#education-container{
+    width: 100%;
+    background-color: #f3d2c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+#education-container h1{
+    padding: 5%;
+    font-size: 3em;
+}
+
+#education-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: #fef6e4;
+    width: 25%;
+    height: 300px;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.education-card h4{
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+/*-----work experience-----*/
+#experience-container{
+    width: 100%;
+    background-color: #fef6e4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#experience-container h1{
+    padding: 5%;
+    font-size: 3em;
+}
+
+#experience-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+
+.experience-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1em;
+    background-color: #001858;
+    color: #fef6e4;
+    width: 20%;
+    height: 150px;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.hidden{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin: 5% 0;
+}
+
+.experience-card h4{
+    color: #fef6e4;
+    cursor: pointer;
+}
+
+.experience-card h4:hover{
+    color: #f582ae;
+}
+/*-----talenten container-----*/
+#talenten-container{
+    width: 100%;
+    background-color: #fffffe;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#talenten-container h1{
+    padding: 1%;
+    font-size: 3em;
+}
+
+#talenten-card{
+    background-color: #f3d2c1;
+    color: #001858;
+    font-size: 1.5em;
+    width: 20%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#talenten-card img{
+    width: 50%;
+    height: 50%;
+    padding: 2px;
+}
+
+#talenten-card p{
+    padding: 4% 0;
+}
+
+/*-----portfolio-------*/
+#h1-title{
+    font-size: 4em;
+    padding-bottom: 0;
+}
+
+#portfolio-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 3%;
+    background-color: #fef6e4;
+}
+
+.portfolio-card{
+    font-size: 1.5em;
+    width: 30%;
+    border: 1px solid transparent;
+    border-radius: 2%;
+    background-color: #f582ae;
+    padding-bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    margin: 0 3% 10% 0;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio-card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.45) 0 5px 15px;
+
+}
+
+.portfolio-card img{
+    height: 200px;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.portfolio-card h4{
+    padding: 1% 2%;
+}
+
+.portfolio-card p{
+    padding: 1% 2%;
+}
+
+/*-----footer-----*/
+footer{
+    background-color: #001858;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+footer p{
+    padding: 2% 0 2% 0;
+    color: #f582ae;
+    font-size: 1em;
+}
+
+#clock{
+    padding: 5% 0 5% 0;
+    color: #f582ae;
+    font-size:2em;
+}
+
+.galaxy{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    .portfolio-card{
+        width: 40%;
+    }
+    .experience-card{
+        width: 40%;
+    }
+    .education-card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 699px){
+    .portfolio-card{
+        width: 90%;;
+        margin: 0 0 10% 0;
+    }
+    .experience-card{
+        width: 80%;
+    }
+    .education-card{
+        width: 70%;
+    }
+}
+
